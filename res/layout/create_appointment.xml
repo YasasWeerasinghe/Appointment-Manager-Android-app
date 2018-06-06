@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="35dp"
+        android:text="Title"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginTop="69dp"
+        android:fillViewport="true">
+
+        <EditText
+            android:id="@+id/txtEditTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"/>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginTop="146dp"
+        android:text="Time"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginTop="134dp"
+        android:numbersBackgroundColor="@color/colorPrimary"
+        android:timePickerMode="spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginTop="360dp"
+        android:text="Event"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextEvent"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="530dp"
+        android:background="@color/bMoveAppo"
+        android:onClick="bSave"
+        android:text="Save"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bThesaurus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="530dp"
+        android:background="@color/bViewEditAppo"
+        android:textColor="#FFFFFF"
+        android:onClick="bThesaurusClick"
+        android:text="Thesaurus"/>
+
+    <EditText
+        android:id="@+id/txtThesaurus"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginStart="77dp"
+        android:hint="Thesaurus"/>
+
+
+
+</RelativeLayout>
